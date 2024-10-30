@@ -1,31 +1,92 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 20px;
 }
 
-h1 {
+.menu-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
     color: #333;
 }
 
-form {
-    margin-bottom: 20px;
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-input {
-    display: block;
-    margin: 10px 0;
+.menu-item {
+    flex: 1 1 30%;
+    margin: 10px;
     padding: 10px;
-    width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.item-details {
+    margin-top: 10px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
 }
 
 button {
-    padding: 10px;
-    background-color: #28a745;
+    background-color: green;
     color: white;
     border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: lightgreen;
+}
+
+button[type='button'] {
+    background-color: green;
+}
+
+button[type='button']:hover {
+    background-color: lightgreen;
 }
